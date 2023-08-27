@@ -1,0 +1,13 @@
+*src
+   --Components 
+   ---Categories
+   -----categories-conatiner
+   -----Categories -Item
+   ---Header
+   --Constants
+   --Router
+   --Utils
+-public
+-node_modules
+
+
