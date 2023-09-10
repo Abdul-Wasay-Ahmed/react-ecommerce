@@ -1,13 +1,20 @@
 import { Route,Routes } from "react-router";
-import About from "./components/about/about";
+import Navigation from "./routers/navigation/navigation.component";
 import Home from "./components/categories/categoreis-container/categoriesContainer";
+
+import SignUp from "./routers/sign-up/sign-up";
+import About from "./components/about/about";
 const App = () =>{
 
   return (
-      <Routes>
-         <Route path="/about" element={<About/>} />
-         <Route path="/" element={<Home/>} />
-      </Routes>
+<Routes>
+  
+  <Route path="/" element={<Navigation/>}  >
+    <Route  index  element={<Home/>}/>
+    <Route  path="sign-up"  element={<SignUp/>}/>
+    </Route>
+
+</Routes>      
 
   )
 

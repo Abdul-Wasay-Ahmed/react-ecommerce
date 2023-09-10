@@ -1,5 +1,6 @@
 import "../../categories/categories.scss"
 import CategoryItems from "../categories-item/categoriesItem"
+import { Outlet } from "react-router"
 const Home = () =>{ 
 
     const categories = [
@@ -47,7 +48,7 @@ const Home = () =>{
     ))}
     
     
-      
+    
     
         </div>
     
